@@ -1,0 +1,7 @@
+# ./kustomization.yaml
+resources:
+# - cert-manager
+# - podinfo/env/dev
+# - podinfo/env/uat
+- java-microservice/overlays/dev
+# - upload-sample-chart
