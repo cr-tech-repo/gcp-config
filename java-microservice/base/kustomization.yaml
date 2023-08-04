@@ -3,5 +3,4 @@ resources:
 - service.yaml
 - gateway.yaml
 - virtualservice.yaml
-# - ingress.yaml
 namespace: spring-boot-namespace
