@@ -1,3 +1,4 @@
 # ./kustomization.yaml
 resources:
  - java-microservice/overlays/dev
+ - iag-operator
