@@ -1,10 +1,4 @@
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: my-ibm-security-verify-access-operator
-  namespace: operators
-spec:
-  channel: stable
-  name: ibm-security-verify-access-operator
-  source: operatorhubio-catalog
-  sourceNamespace: olm
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - subscription.yaml
