@@ -1,5 +1,4 @@
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
+apiVersion: operators.coreos.com/v1alpha1kind: Subscription
 metadata:
   name: my-ibm-security-verify-access-operator
   namespace: operators
