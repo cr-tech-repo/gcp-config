@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: doc-extraction-app
+spec:
+  template:
+    spec:
+      containers:
+      - name: doc-extraction-c
+        image: us-east4-docker.pkg.dev/prj-ml1-d-floating-nh1x/eiam-eidp-artifacts/eidp-document-extraction-service:1.0-SNAPSHOT
+        ports:
+        - containerPort: 9080
+        - containerPort: 9443
+        resources:
+          limits:
+            cpu: 500m
+            memory: 640Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi

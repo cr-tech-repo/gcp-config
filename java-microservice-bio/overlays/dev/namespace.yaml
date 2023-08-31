@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bio-verify-ns
+  labels:
+    istio-injection: enabled
+#    istio-injection-istio.io/rev: "asm-managed-stable"
