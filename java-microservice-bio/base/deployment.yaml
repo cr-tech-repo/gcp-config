@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app
+  name: app
   labels:
-    app: spring-boot-app
+    app: app
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
@@ -15,20 +15,20 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-boot-app
+      app: app
   template:
     metadata:
 #      annotations:
 #        sidecar.istio.io/inject: "true"
 #        proxy.istio.io/config: '{"holdApplicationUntilProxyStarts": true}'
       labels:
-        app: spring-boot-app
+        app: app
 #      annotations:
 #        readiness.status.sidecar.istio.io/applicationPorts: "9081"
 #        sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       containers:
-      - name: spring-boot-app
+      - name: app
         image: springio/gs-spring-boot-docker:latest
         ports:
         - containerPort: 8080

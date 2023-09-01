@@ -8,8 +8,6 @@ patches:
 - path: patch-app.yaml
   target:
     kind: Deployment
-    name: spring-boot-app
 - path: patch-service.yaml
   target:
     kind: Service
-    name: spring-boot-service
