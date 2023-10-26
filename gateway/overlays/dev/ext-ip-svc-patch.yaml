@@ -1,0 +1,4 @@
+spec:
+  externalIPs:
+    - 35.188.245.112
+  loadBalancerIP: 35.188.245.112
