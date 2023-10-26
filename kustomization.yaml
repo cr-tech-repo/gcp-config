@@ -2,4 +2,4 @@
 resources:
  - java-microservice-bio/overlays/dev
  - java-microservice-doc/overlays/dev
- - iag-operator
+#  - iag-operator
