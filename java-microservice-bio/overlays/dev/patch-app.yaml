@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: doc-extraction-c
-        image: us-east4-docker.pkg.dev/prj-ml1-d-floating-nh1x/eiam-eidp-artifacts/eidp-biometric-verification-service:SNAPSHOT-V1
+        image: us-docker.pkg.dev/somgke-manual-deploy-project/ppc-docker-artifacts/eidp-biometric-verification-service:SNAPSHOT-V1
         ports:
         - containerPort: 9080
         - containerPort: 9443
