@@ -4,7 +4,3 @@ resources:
 - ../../base
 - namespace.yaml
 namespace: asm-gateway
-patches:
-- path: ext-ip-svc-patch.yaml
-  target:
-    kind: Service
