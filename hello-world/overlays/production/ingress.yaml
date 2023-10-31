@@ -1,0 +1,11 @@
+---
+apiVersion: "networking.k8s.io/v1"
+kind: "Ingress"
+metadata:
+  name: "spring-boot-app-external"
+spec:
+  defaultBackend:
+    service:
+      name: "spring-boot-service"
+      port:
+        number: 80

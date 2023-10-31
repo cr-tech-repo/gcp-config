@@ -1,6 +1,4 @@
 # ./kustomization.yaml
 resources:
  - gateway/overlays/dev
- - java-microservice-bio/overlays/dev
- - java-microservice-doc/overlays/dev
-#  - iag-operator
+ - hello-world/overlays/dev
