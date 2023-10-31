@@ -39,7 +39,6 @@ spec:
         volumeMounts:
           - name: index-html-volume
             mountPath: /usr/share/caddy
-            subpath: index.html
         resources:
           limits:
             cpu: 2000m
