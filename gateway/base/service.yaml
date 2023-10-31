@@ -36,5 +36,5 @@ spec:
   selector:
     app: asm-ingressgateway
     istio: ingressgateway
-  type: LoadBalancer # Using NodePort to expose the service on the nodes for the external load balancer.
+  type: ClusterIP # Using NodePort to expose the service on the nodes for the external load balancer.
 ---
