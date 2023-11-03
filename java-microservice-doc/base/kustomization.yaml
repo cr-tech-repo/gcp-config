@@ -1,6 +1,0 @@
-resources:
-- deployment.yaml
-- service.yaml
-- gateway.yaml
-- virtualservice.yaml
-namespace: spring-boot-namespace

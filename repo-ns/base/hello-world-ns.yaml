@@ -4,4 +4,4 @@ metadata:
   name: hello-world
   labels:
     istio-injection: enabled
-    istio-injection-istio.io/rev: "asm-managed-stable"
+    istio-injection-istio.io/rev: "asm-managed"

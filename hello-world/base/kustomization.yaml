@@ -1,7 +1,0 @@
-resources:
-- configmap.yaml
-- deployment.yaml
-- service.yaml
-- gateway.yaml
-- virtualservice.yaml
-namespace: hello-world

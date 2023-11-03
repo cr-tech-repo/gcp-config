@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: spring-boot-namespace
-  labels:
-    istio-injection: enabled
-#    istio-injection-istio.io/rev: "asm-managed-stable"
