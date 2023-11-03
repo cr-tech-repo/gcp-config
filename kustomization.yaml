@@ -1,4 +1,4 @@
 # ./kustomization.yaml
 resources:
  - gateway/overlays/dev
- - repo-ns/overlays/dev
+ - hello-world-ns-repo/overlays/dev
