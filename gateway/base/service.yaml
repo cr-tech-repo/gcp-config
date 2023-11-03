@@ -22,9 +22,7 @@ metadata:
     app: asm-ingressgateway
     istio: ingressgateway
 spec:
-  # externalIPs:
-  #   - 35.188.245.112
-  # loadBalancerIP: 35.188.245.112
+  ClusterIP: None
   ports:
   # The status-port exposes a /healthz/ready endpoint that can be used for health checks.
   - name: status-port
@@ -38,5 +36,5 @@ spec:
   selector:
     app: asm-ingressgateway
     istio: ingressgateway
-  type: LoadBalancer # Using NodePort to expose the service on the nodes for the external load balancer.
+  type: ClusterIP
 ---
