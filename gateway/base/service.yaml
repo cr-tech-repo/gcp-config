@@ -22,7 +22,6 @@ metadata:
     app: asm-ingressgateway
     istio: ingressgateway
 spec:
-  ClusterIP: None
   ports:
   # The status-port exposes a /healthz/ready endpoint that can be used for health checks.
   - name: status-port
@@ -36,5 +35,5 @@ spec:
   selector:
     app: asm-ingressgateway
     istio: ingressgateway
-  type: ClusterIP
+  type: LoadBalancer
 ---
