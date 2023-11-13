@@ -12,5 +12,5 @@ spec:
     repo: https://github.com/WASdev/websphere-liberty-operator.git
     branch: 1.2.2
     auth: none
-    dir: deploy/releases/1.2.2/kustomize/overlays/watch-all-namespaces
+    dir: deploy/releases/1.2.1/kustomize/overlays/watch-all-namespaces
     
