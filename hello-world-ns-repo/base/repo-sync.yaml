@@ -9,6 +9,6 @@ spec:
   # Since this is for a namespace repository, the format is unstructured
   sourceFormat: unstructured
   git:
-    repo: https://github.com/bradreimers/ppc-hello-world.git
+    repo: https://github.com/cr-tech-repo/ppc-hello-world.git
     branch: main
     auth: none
