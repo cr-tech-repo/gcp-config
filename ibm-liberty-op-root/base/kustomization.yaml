@@ -1,5 +1,5 @@
 # ./kustomization.yaml
 resources:
- - hello-world-ns.yaml
+ - namespace.yaml
  - sync-rolebinding.yaml
- - repo-sync.yaml
+ - root-sync.yaml

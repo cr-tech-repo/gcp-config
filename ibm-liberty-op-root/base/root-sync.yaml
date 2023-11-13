@@ -1,6 +1,6 @@
 #ROOT_SOURCE/namespaces/NAMESPACE/repo-sync.yaml
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: ppc-liberty-operator
   namespace: liberty-operator
