@@ -3,3 +3,4 @@ resources:
  - gateway/overlays/dev
  - hello-world-ns-repo/overlays/dev
  - ibm-liberty-op-root/overlays/dev
+ - iag/overlays/dev
