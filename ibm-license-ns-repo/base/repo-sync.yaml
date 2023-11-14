@@ -9,7 +9,7 @@ spec:
   # Since this is for a namespace repository, the format is unstructured
   sourceFormat: unstructured
   git:
-    repo: https://github.com/IBM/ibm-licensing-operator.git
-    branch: v1.17.0
+    repo: https://github.com/cr-tech-repo/ibm-licensing-operator.git
+    branch: latest
     auth: none
     dir: config/default
