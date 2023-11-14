@@ -18,7 +18,7 @@ spec:
       volumes:
         - name: pub-iag-configmap
           configMap:
-            name: pub-iag-configmapap
+            name: pub-iag-configmap
       containers:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
