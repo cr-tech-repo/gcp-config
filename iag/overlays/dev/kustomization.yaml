@@ -2,5 +2,4 @@
 namespace: iag-namespace
 resources:
 - namespace.yaml
-- configmap.yaml
 - ../../base
