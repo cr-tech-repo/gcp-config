@@ -1,4 +1,3 @@
-kind: Kustomization
 metadata:
   name: pub-iag-configmap
 configMapGenerator:
