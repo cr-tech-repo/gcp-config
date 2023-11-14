@@ -16,14 +16,14 @@ spec:
     spec:
       serviceAccountName: ibm-application-gateway
       volumes:
-        - name: pub-iag-configmap
+        - name: iag-config-map
           configMap:
-            name: pub-iag-configmap
+            name: iag-config-map
       containers:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
           volumeMounts:
-            - name: pub-iag-configmap
+            - name: iag-config-map
               mountPath: /var/iag/config/
           readinessProbe:
             exec:
