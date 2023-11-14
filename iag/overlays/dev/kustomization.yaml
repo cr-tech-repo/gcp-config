@@ -1,4 +1,4 @@
-kind: Kustomization
+# kind: Kustomization
 namespace: iag-namespace
 resources:
 - namespace.yaml
