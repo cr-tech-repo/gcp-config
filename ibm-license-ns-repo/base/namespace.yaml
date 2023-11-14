@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ibm-common-services
+  # labels:
+  #   istio-injection: enabled
+  #   istio-injection-istio.io/rev: "asm-managed"
