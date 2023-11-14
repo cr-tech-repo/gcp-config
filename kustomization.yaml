@@ -4,3 +4,4 @@ resources:
  - hello-world-ns-repo/overlays/dev
  - ibm-liberty-op-root/overlays/dev
  - iag/overlays/dev
+ - ibm-license-ns-repo/overlays/dev
