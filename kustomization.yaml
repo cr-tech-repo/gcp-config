@@ -2,7 +2,7 @@
 resources:
  - gateway/overlays/dev
  - hello-world-ns-repo/overlays/dev
- - ppc-java-backend-microservice-test-repo/overlays/dev
+ - ppc-java-backed-microservice-test-repo/overlays/dev
  - ppc-ng-frontend-test-repo/overlays/dev
  - ibm-liberty-op-root/overlays/dev
  - iag/overlays/dev
