@@ -3,7 +3,7 @@
  apiVersion: rbac.authorization.k8s.io/v1
  metadata:
    name: syncs-repo
-   namespace: ibm-common-services
+   namespace: config-management-system
  subjects:
  - kind: ServiceAccount
    name: ns-reconciler-ibm-common-services-ppc-ibm-licensing-15
