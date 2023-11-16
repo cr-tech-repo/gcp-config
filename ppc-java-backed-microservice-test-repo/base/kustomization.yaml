@@ -1,5 +1,5 @@
 # ./kustomization.yaml
 resources:
- - namespace.yaml.yaml
+ - namespace.yaml
  - sync-rolebinding.yaml
  - repo-sync.yaml
