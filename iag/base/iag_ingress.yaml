@@ -4,3 +4,14 @@ metadata:
   name: iag-pub-ingress
   annotations:
     networking.gke.io/v1beta1.FrontendConfig: "iag-frontend"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: iag-service
+            port:
+              number: 443
