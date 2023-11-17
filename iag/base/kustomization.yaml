@@ -2,6 +2,6 @@ resources:
 - iag_pub_instance.yaml
 - iag_service_account.yaml
 - iag_service.yaml
-- iag_ingress.yaml
-- iag_frontendconfig.yaml
-- iag_backendconfig.yaml
+# - iag_ingress.yaml
+# - iag_frontendconfig.yaml
+# - iag_backendconfig.yaml
