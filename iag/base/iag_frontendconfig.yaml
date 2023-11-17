@@ -4,3 +4,6 @@ metadata:
   name: iag-frontend
 spec:
   sslPolicy: gke-ingress-ssl-policy
+  redirectToHttps:
+    enabled: true
+    responseCodeName: 302
