@@ -12,6 +12,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: iag-service
+            name: iag-pub-instance-service
             port:
               number: 443
