@@ -1,6 +1,6 @@
 apiVersion: networking.gke.io/v1beta1
 kind: FrontendConfig
 metadata:
-  name: my-frontend-config
+  name: iag-frontend
 spec:
   sslPolicy: gke-ingress-ssl-policy
