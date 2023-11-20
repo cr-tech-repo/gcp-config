@@ -9,7 +9,7 @@ spec:
   # Since this is for a namespace repository, the format is unstructured
   sourceFormat: unstructured
   git:
-    repo: https://dev.azure.com/SOM-EDCIM/EIAM/_git/ppc-java-backed-microservice-test-repo
+    repo: git@ssh.dev.azure.com:v3/SOM-EDCIM/EIAM/ppc-java-backed-microservice-test-repo
     branch: cicd-test
     auth: ssh
     secretRef:
