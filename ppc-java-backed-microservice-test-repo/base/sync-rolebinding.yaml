@@ -6,7 +6,7 @@
    namespace: ppc-java-backend-ns
  subjects:
  - kind: ServiceAccount
-   name: ns-reconciler-ppc-java-backend-ns-ppc-java-backend-15
+   name: ns-reconciler-ppc-java-backend-ns-ppc-java-backend-16
    namespace: config-management-system
  roleRef:
    kind: ClusterRole
