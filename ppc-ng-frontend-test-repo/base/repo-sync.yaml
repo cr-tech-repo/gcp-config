@@ -11,6 +11,6 @@ spec:
   git:
     repo: https://dev.azure.com/SOM-EDCIM/EIAM/_git/ppc-ng-frontend-test-repo
     branch: cicd-test
-    auth: token
+    auth: ssh
     secretRef:
-      name: reimersb-ado-token
+      name: reimersb-ado-ssh
