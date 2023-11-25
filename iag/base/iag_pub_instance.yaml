@@ -19,7 +19,7 @@ spec:
         - name: pub-iag-configmap
           configMap:
             name: pub-iag-configmap
-        - name: iag-storage
+        - name: iag-storage-mount
           persistentVolumeClaim:
             claimName: iag-pvc # This should match the name of your PVC
       containers:
@@ -28,7 +28,7 @@ spec:
           volumeMounts:
             - name: pub-iag-configmap
               mountPath: /var/iag/config/
-            - name: iag-storage
+            - name: iag-storage-mount
               mountPath: /var/iag/configdir/ # Path within the container where you want to mount the volume
           readinessProbe:
             exec:
