@@ -29,7 +29,7 @@ spec:
             - name: pub-iag-configmap
               mountPath: /var/iag/config/
             - name: iag-storage
-              mountPath: /var/iag/config/ # Path within the container where you want to mount the volume
+              mountPath: /var/iag/configdir/ # Path within the container where you want to mount the volume
           readinessProbe:
             exec:
               command:
