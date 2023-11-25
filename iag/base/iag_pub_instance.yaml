@@ -19,12 +19,17 @@ spec:
         - name: pub-iag-configmap
           configMap:
             name: pub-iag-configmap
+        - name: iag-storage
+          persistentVolumeClaim:
+            claimName: iag-pvc # This should match the name of your PVC
       containers:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
           volumeMounts:
             - name: pub-iag-configmap
               mountPath: /var/iag/config/
+            - name: iag-storage
+              mountPath: /var/iag/config/ # Path within the container where you want to mount the volume
           readinessProbe:
             exec:
               command:
