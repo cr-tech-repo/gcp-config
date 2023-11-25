@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: master
-        image: gcrio/redis:latest
+        image: redis
         resources:
           requests:
             cpu: 100m
