@@ -8,4 +8,4 @@ spec:
   resources:
     requests:
       storage: 1Gi # This should match the PV size or be smaller
-  storageClassName: manual # This should match the PV's storage class
+  storageClassName: standard-rwo # This should match the PV's storage class
