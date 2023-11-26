@@ -6,3 +6,5 @@ spec:
   sessionAffinity:
     affinityType: "GENERATED_COOKIE"
     affinityCookieTtlSec: 50
+  securityPolicy:
+    name: "gcp-cloud-armor-policy-test"

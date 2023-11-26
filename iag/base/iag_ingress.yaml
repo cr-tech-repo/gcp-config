@@ -3,8 +3,22 @@ kind: Ingress
 metadata:
   name: iag-pub-ingress
   annotations:
-    networking.gke.io/v1beta1.FrontendConfig: "iag-frontend"
- spec:
+    # External Load Balancer. Google managed SSL certs are only supported for gce ingress controller 
+    # with external HTTP loadbalancing
+    # they are not supported with third party nginx ingress controller, etc.
+    kubernetes.io/ingress.class: "gce" 
+
+    # Static IP for Ingress Service (ExternalIP)
+    kubernetes.io/ingress.global-static-ip-name: "gke-ingress-extip1" 
+    # we are still using the same ExternalIP address as before.
+
+    # Google Managed SSL Certificates. This needs to be added
+    networking.gke.io/managed-certificates: pub-iag-managed-cert-for-ingress
+    # this is the object name in the Managed-Certificate.yaml file
+
+    # SSL Redirect HTTP to HTTPS
+    networking.gke.io/v1beta1.FrontendConfig: "iag-frontend"   
+spec: 
   rules:
   - http:
       paths:

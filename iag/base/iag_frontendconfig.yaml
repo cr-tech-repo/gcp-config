@@ -6,4 +6,4 @@ spec:
   sslPolicy: gke-ingress-ssl-policy
   redirectToHttps:
     enabled: true
-    responseCodeName: "302"
+    responseCodeName: "301"
