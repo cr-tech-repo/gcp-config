@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: iag-pvc
+  name: iag-pvc-1
   namespace: iag-namespace
 spec:
   accessModes:
@@ -9,5 +9,5 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  volumeName: iag-pv
+  volumeName: iag-pv-1
   storageClassName: iag-storage-bucket-class

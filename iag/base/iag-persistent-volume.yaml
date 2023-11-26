@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: iag-pv
+  name: iag-pv-1
 spec:
   accessModes:
   - ReadWriteMany
@@ -10,7 +10,7 @@ spec:
   storageClassName: iag-storage-bucket-class
   claimRef:
     namespace: iag-namespace
-    name: iag-pvc
+    name: iag-pvc-1
   mountOptions:
     - implicit-dirs
   csi:

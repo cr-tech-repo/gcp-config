@@ -21,7 +21,7 @@ spec:
             name: pub-iag-configmap
         - name: iag-storage-mount
           persistentVolumeClaim:
-            claimName: iag-pvc # This should match the name of your PVC
+            claimName: iag-pvc-1 # This should match the name of your PVC
       containers:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
