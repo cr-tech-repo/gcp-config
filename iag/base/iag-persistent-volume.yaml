@@ -15,5 +15,5 @@ spec:
     - implicit-dirs
   csi:
     driver: gcsfuse.csi.storage.gke.io
-    volumeHandle: gs://milogin-sb-static
+    volumeHandle: milogin-sb-static
     readOnly: true
