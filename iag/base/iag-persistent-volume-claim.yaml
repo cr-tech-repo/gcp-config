@@ -2,10 +2,12 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: iag-pvc
+  namespace: iag-namespace
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteMany
   resources:
     requests:
-      storage: 1Gi # This should match the PV size or be smaller
-  storageClassName: standard-rwo # This should match the PV's storage class
+      storage: 5Gi
+  volumeName: iag-pv
+  storageClassName: iag-storage-bucket-class

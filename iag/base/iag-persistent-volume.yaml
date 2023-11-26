@@ -3,11 +3,17 @@ kind: PersistentVolume
 metadata:
   name: iag-pv
 spec:
-  capacity:
-    storage: 2Gi # Adjust size as per your requirement
   accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain # or Delete as per your preference
-  storageClassName: standard-rwo # Specify your storage class here
-  hostPath:
-    path: "/var/iag/configdir" # The path on the host where data is stored
+  - ReadWriteMany
+  capacity:
+    storage: 5Gi
+  storageClassName: iag-storage-bucket-class
+  claimRef:
+    namespace: iag-namespace
+    name: iag-pvc
+  mountOptions:
+    - implicit-dirs
+  csi:
+    driver: gcsfuse.csi.storage.gke.io
+    volumeHandle: gs://milogin-sb-static
+    readOnly: true
