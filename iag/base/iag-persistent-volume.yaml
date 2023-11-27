@@ -13,7 +13,7 @@ spec:
     namespace: iag-namespace
     name: iag-pvc-1
   mountOptions:
-    - only-dir=pages
+    - implicit-dirs
   csi:
     driver: gcsfuse.csi.storage.gke.io
     volumeHandle: milogin-sb-static
