@@ -6,6 +6,5 @@ resources:
 # - ppc-ng-frontend-test-repo/overlays/dev
  - iag/overlays/dev
 # - redis/overlays/dev
-
 # - ibm-license-ns-repo/overlays/dev
 # - ibm-liberty-op-root/overlays/dev
