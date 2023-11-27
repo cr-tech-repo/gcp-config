@@ -32,8 +32,10 @@ spec:
               mountPath: /var/iag/config/
             - name: iag-storage-mount
               mountPath: /var/iag/config/pages/
+              readOnly: false
             - name: iag-storage-mount
               mountPath: /var/iag/logs/
+              readOnly: false
           readinessProbe:
             exec:
               command:
