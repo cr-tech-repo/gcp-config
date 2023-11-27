@@ -17,6 +17,10 @@ spec:
         gke-gcsfuse/volumes: "true"
     spec:
       serviceAccountName: ibm-application-gateway
+      securityContext:
+        runAsUser: 1001
+        runAsGroup: 2002
+        fsGroup: 3003
       volumes:
         - name: pub-iag-configmap
           configMap:
