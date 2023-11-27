@@ -7,13 +7,11 @@ spec:
   - ReadWriteMany
   capacity:
     storage: 5Gi
+  persistentVolumeReclaimPolicy: Retain
   storageClassName: iag-storage-bucket-class
   claimRef:
     namespace: iag-namespace
     name: iag-pvc-1
-  mountOptions:
-    - implicit-dirs
   csi:
     driver: gcsfuse.csi.storage.gke.io
     volumeHandle: milogin-sb-static
-    readOnly: true

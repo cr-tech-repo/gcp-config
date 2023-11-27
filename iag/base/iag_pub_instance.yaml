@@ -4,8 +4,6 @@ metadata:
   name: iag-pub-instance
   labels:
     app: iag-pub-instance
-  annotations:
-    gke-gcsfuse/volumes: "true"
 spec:
   selector:
     matchLabels:
@@ -15,6 +13,8 @@ spec:
     metadata:
       labels:
         app: iag-pub-instance
+      annotations:
+        gke-gcsfuse/volumes: "true"
     spec:
       serviceAccountName: ibm-application-gateway
       volumes:
