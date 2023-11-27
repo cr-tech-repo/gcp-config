@@ -31,7 +31,7 @@ spec:
             - name: pub-iag-configmap
               mountPath: /var/iag/config/
             - name: iag-storage-mount
-              mountPath: /var/iag/config/pgs/
+              mountPath: /var/iag/config/pages/
             - name: iag-storage-mount
               mountPath: /var/iag/logs/
           readinessProbe:
