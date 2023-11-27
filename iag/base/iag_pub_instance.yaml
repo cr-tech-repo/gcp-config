@@ -28,8 +28,8 @@ spec:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
           volumeMounts:
-            - name: pub-iag-configmap
-              mountPath: /var/iag/config/
+            # - name: pub-iag-configmap
+            #   mountPath: /var/iag/config/
             - name: iag-storage-mount
               mountPath: /var/iag/config/pages/ # Path within the container where you want to mount the volume
           readinessProbe:
