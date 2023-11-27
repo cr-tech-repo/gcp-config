@@ -16,4 +16,4 @@ spec:
   csi:
     driver: gcsfuse.csi.storage.gke.io
     volumeHandle: milogin-sb-static
-    readOnly: false
+    readOnly: true
