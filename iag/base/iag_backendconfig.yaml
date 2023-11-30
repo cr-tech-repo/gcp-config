@@ -2,6 +2,10 @@ apiVersion: cloud.google.com/v1
 kind: BackendConfig
 metadata:
   name: iag-backendconfig
+  annotations:
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.allow-http: "true"
+    networking.gke.io/internal-load-balancer: "true"  # Add this line for internal LB
 spec:
   sessionAffinity:
     affinityType: "GENERATED_COOKIE"
