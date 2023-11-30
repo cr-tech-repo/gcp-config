@@ -3,9 +3,6 @@ kind: Service
 metadata:
   annotations:
     cloud.google.com/backend-config: '{"default": "iag-backendconfig"}'
-    kubernetes.io/ingress.class: "gce"
-    kubernetes.io/ingress.allow-http: "true"
-    networking.gke.io/internal-load-balancer: "true"  # Add this line for internal LB
   name: iag-pub-instance-service
 spec:
   ports:
@@ -14,4 +11,4 @@ spec:
       targetPort: 8443
   selector:
     app: iag-pub-instance
-  type: LoadBalancer
+  type: ClusterIP
