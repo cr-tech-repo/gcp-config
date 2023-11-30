@@ -7,3 +7,4 @@ resources:
 - iag_ingress.yaml
 - iag_frontendconfig.yaml
 - iag_backendconfig.yaml
+- iag_app_configmap.yaml
