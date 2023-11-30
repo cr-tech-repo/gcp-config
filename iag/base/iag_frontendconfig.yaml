@@ -2,9 +2,6 @@ apiVersion: networking.gke.io/v1beta1
 kind: FrontendConfig
 metadata:
   name: iag-frontend
-  annotations:
-    kubernetes.io/ingress.class: "gce"
-    kubernetes.io/ingress.allow-http: "true"
 spec:
   sslPolicy: gke-ingress-ssl-policy
   redirectToHttps:
