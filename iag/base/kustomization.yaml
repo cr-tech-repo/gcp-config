@@ -2,8 +2,8 @@ resources:
 - iag_pub_instance.yaml
 - iag_service_account.yaml
 - iag_service.yaml
-# - iag-persistent-volume-claim.yaml
-# - iag-persistent-volume.yaml
-# - iag_ingress.yaml
-# - iag_frontendconfig.yaml
-# - iag_backendconfig.yaml
+- iag-persistent-volume-claim.yaml
+- iag-persistent-volume.yaml
+- iag_ingress.yaml
+- iag_frontendconfig.yaml
+- iag_backendconfig.yaml
