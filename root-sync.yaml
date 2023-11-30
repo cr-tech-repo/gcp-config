@@ -1,0 +1,149 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  annotations:
+    configmanagement.gke.io/managed-by-hub: "true"
+    configmanagement.gke.io/update-time: "1691583705"
+  creationTimestamp: "2023-08-09T12:15:16Z"
+  generation: 2
+  labels:
+    app.kubernetes.io/managed-by: anthosconfigmanagement.googleapis.com
+  name: root-sync
+  namespace: config-management-system
+  resourceVersion: "125262731"
+  uid: b9c8b347-0dc1-420f-af01-319f2497c2d2
+spec:
+  git:
+    auth: none
+    branch: main
+    period: 5s
+    repo: https://github.com/cr-tech-repo/gcp-config.git
+    secretRef: {}
+  override: {}
+  sourceFormat: unstructured
+  sourceType: git
+status:
+  conditions:
+  - lastTransitionTime: "2023-09-23T02:10:15Z"
+    lastUpdateTime: "2023-09-23T02:10:15Z"
+    status: "False"
+    type: Reconciling
+  - commit: 936b9a48d670f10d11d6306b922129c538ecefb8
+    errorSummary: {}
+    lastTransitionTime: "2023-11-30T00:15:45Z"
+    lastUpdateTime: "2023-11-30T00:15:45Z"
+    message: Sync Completed
+    reason: Sync
+    status: "False"
+    type: Syncing
+  lastSyncedCommit: 936b9a48d670f10d11d6306b922129c538ecefb8
+  observedGeneration: 2
+  reconciler: root-reconciler
+  rendering:
+    commit: 936b9a48d670f10d11d6306b922129c538ecefb8
+    errorSummary: {}
+    gitStatus:
+      branch: main
+      dir: .
+      repo: https://github.com/cr-tech-repo/gcp-config.git
+      revision: HEAD
+    lastUpdate: "2023-11-27T18:49:41Z"
+    message: Rendering succeeded
+  source:
+    commit: 936b9a48d670f10d11d6306b922129c538ecefb8
+    errorSummary: {}
+    gitStatus:
+      branch: main
+      dir: .
+      repo: https://github.com/cr-tech-repo/gcp-config.git
+      revision: HEAD
+    lastUpdate: "2023-11-30T00:15:44Z"
+  sync:
+    commit: 936b9a48d670f10d11d6306b922129c538ecefb8
+    errorSummary:
+      totalCount: 4
+    errors:
+    - code: "1060"
+      errorMessage: |-
+        KNV1060: The ":root_ado-ppc-root-sync" reconciler detects a management conflict for a resource declared in another repository. Remove the declaration for this resource from either the current repository, or the repository managed by ":root_ado-ppc-root-sync".
+
+        source: v1_namespace_iag-namespace.yaml
+        metadata.name: iag-namespace
+        group:
+        version: v1
+        kind: Namespace
+
+        For more information, see https://g.co/cloud/acm-errors#knv1060
+      errorResources:
+      - gvk:
+          group: ""
+          kind: Namespace
+          version: v1
+        name: iag-namespace
+        sourcePath: v1_namespace_iag-namespace.yaml
+    - code: "1060"
+      errorMessage: |-
+        KNV1060: The ":root_ado-ppc-root-sync" reconciler detects a management conflict for a resource declared in another repository. Remove the declaration for this resource from either the current repository, or the repository managed by ":root_ado-ppc-root-sync".
+
+        source: v1_serviceaccount_ibm-application-gateway.yaml
+        namespace: iag-namespace
+        metadata.name: ibm-application-gateway
+        group:
+        version: v1
+        kind: ServiceAccount
+
+        For more information, see https://g.co/cloud/acm-errors#knv1060
+      errorResources:
+      - gvk:
+          group: ""
+          kind: ServiceAccount
+          version: v1
+        name: ibm-application-gateway
+        namespace: iag-namespace
+        sourcePath: v1_serviceaccount_ibm-application-gateway.yaml
+    - code: "1060"
+      errorMessage: |-
+        KNV1060: The ":root_ado-ppc-root-sync" reconciler detects a management conflict for a resource declared in another repository. Remove the declaration for this resource from either the current repository, or the repository managed by ":root_ado-ppc-root-sync".
+
+        source: v1_service_iag-pub-instance-service.yaml
+        namespace: iag-namespace
+        metadata.name: iag-pub-instance-service
+        group:
+        version: v1
+        kind: Service
+
+        For more information, see https://g.co/cloud/acm-errors#knv1060
+      errorResources:
+      - gvk:
+          group: ""
+          kind: Service
+          version: v1
+        name: iag-pub-instance-service
+        namespace: iag-namespace
+        sourcePath: v1_service_iag-pub-instance-service.yaml
+    - code: "1060"
+      errorMessage: |-
+        KNV1060: The ":root_ado-ppc-root-sync" reconciler detects a management conflict for a resource declared in another repository. Remove the declaration for this resource from either the current repository, or the repository managed by ":root_ado-ppc-root-sync".
+
+        source: apps_v1_deployment_iag-pub-instance.yaml
+        namespace: iag-namespace
+        metadata.name: iag-pub-instance
+        group: apps
+        version: v1
+        kind: Deployment
+
+        For more information, see https://g.co/cloud/acm-errors#knv1060
+      errorResources:
+      - gvk:
+          group: apps
+          kind: Deployment
+          version: v1
+        name: iag-pub-instance
+        namespace: iag-namespace
+        sourcePath: apps_v1_deployment_iag-pub-instance.yaml
+    gitStatus:
+      branch: main
+      dir: .
+      repo: https://github.com/cr-tech-repo/gcp-config.git
+      revision: HEAD
+    lastUpdate: "2023-11-30T00:15:47Z"
