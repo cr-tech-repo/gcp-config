@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pub-iag-configmap
+data:
+  app.properties: |
+    value=1
