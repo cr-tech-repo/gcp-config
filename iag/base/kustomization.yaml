@@ -8,3 +8,5 @@ resources:
 - iag_frontendconfig.yaml
 - iag_backendconfig.yaml
 - iag_app_configmap.yaml
+- iag_gateway.yaml
+- iag_route.yaml
