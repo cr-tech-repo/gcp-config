@@ -7,8 +7,7 @@ spec:
     - "*"
   rules:
     - matches:
-      - path:
-        - /*
+      - path: /*
         backends:
         - service:
           name: iag-pub-instance-service
