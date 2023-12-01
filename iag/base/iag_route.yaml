@@ -6,7 +6,7 @@ spec:
   parentRefs:
   - name: iag-external-application-gateway
   hostnames:
-  - "*"
+  - "example.com"
   rules:
   - backendRefs:
     - name: iag-pub-instance-service
