@@ -3,12 +3,11 @@ kind: HTTPRoute
 metadata:
   name: iag-external-route
 spec:
+  parentRefs:
+  - name: iag-external-application-gateway
   hostnames:
-    - "*"
+  - "*"
   rules:
-    - matches:
-      - path: /*
-        backends:
-        - service:
-          name: iag-pub-instance-service
-          port: 443
+  - backendRefs:
+    - name: iag-pub-instance-service
+      port: 443
