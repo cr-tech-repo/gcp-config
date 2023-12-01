@@ -1,0 +1,13 @@
+apiVersion: networking.gke.io/v1
+kind: GCPBackendPolicy
+metadata:
+  name: iag-backend-policy
+spec:
+  default:
+    securityPolicy: gcp-cloud-armor-policy-test
+    sessionAffinity:
+      affinityType: "GENERATED_COOKIE"
+      affinityCookieTtlSec: 50
+  targetRef:
+    kind: Service
+    name: iag-pub-instance-service
