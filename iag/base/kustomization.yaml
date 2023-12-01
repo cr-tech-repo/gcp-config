@@ -10,3 +10,5 @@ resources:
 - iag_app_configmap.yaml
 - iag_gateway.yaml
 - iag_route.yaml
+- iag_gateway_policy.yaml
+- iag_gcp_backend_policy.yaml
