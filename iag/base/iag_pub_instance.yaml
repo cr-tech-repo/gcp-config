@@ -21,9 +21,9 @@ spec:
         - name: pub-iag-configmap
           configMap:
             name: pub-iag-configmap
-        # - name: iag-storage-mount
-        #   persistentVolumeClaim:
-        #     claimName: iag-pvc-1
+        - name: iag-storage-mount
+          persistentVolumeClaim:
+            claimName: iag-pvc-1
       containers:
         - name: iag-instance
           image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
