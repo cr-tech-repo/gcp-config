@@ -2,6 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: iag-pv-1
+  namespace: iag-namespace
 spec:
   accessModes:
   - ReadWriteMany
