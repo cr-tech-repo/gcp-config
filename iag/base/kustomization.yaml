@@ -5,10 +5,10 @@ resources:
 - iag-persistent-volume-claim.yaml
 - iag-persistent-volume.yaml
 - iag_ingress.yaml
-- iag_frontendconfig.yaml
-- iag_backendconfig.yaml
-- iag_app_configmap.yaml
-- iag_gateway.yaml
-- iag_route.yaml
-- iag_gateway_policy.yaml
-- iag_gcp_backend_policy.yaml
+# - iag_frontendconfig.yaml
+# - iag_backendconfig.yaml
+# - iag_app_configmap.yaml
+# - iag_gateway.yaml
+# - iag_route.yaml
+# - iag_gateway_policy.yaml
+# - iag_gcp_backend_policy.yaml

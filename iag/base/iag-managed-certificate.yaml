@@ -8,7 +8,6 @@ metadata:
 spec:
   domains:
   # 100 domains max and wildcard domains are NOT supported
-    #- demo1.kalyanreddydaida.com
     - milogindev.nonprod.gcp.michigan.gov
     # there will be no org information in this type of cert that will be generated.
     # these certs are less flexible than certs we obain and manage ourself.
