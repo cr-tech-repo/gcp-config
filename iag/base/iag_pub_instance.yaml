@@ -26,7 +26,7 @@ spec:
             claimName: iag-pvc-1
       containers:
         - name: iag-instance
-          image: icr.io/ibmappgateway/ibm-application-gateway:23.04.0
+          image: icr.io/ibmappgateway/ibm-application-gateway:23.10.0
           volumeMounts:
             - name: pub-iag-configmap
               mountPath: /var/iag/config/
